@@ -1,0 +1,17 @@
+# Reference inventory. Runtime adapters deliberately use fixed allowlisted URLs.
+[market]
+symbol = "BTCUSDT"
+spot = "https://api.binance.com/api/v3/klines"
+funding = "https://fapi.binance.com/fapi/v1/fundingRate"
+open_interest = "https://fapi.binance.com/futures/data/openInterestHist"
+crosscheck = "https://www.okx.com/api/v5/market/history-candles"
+[news]
+coindesk = "https://www.coindesk.com/arc/outboundfeeds/rss"
+cointelegraph = "https://cointelegraph.com/rss"
+fed = "https://www.federalreserve.gov/feeds/press_monetary.xml"
+sec = "https://www.sec.gov/news/pressreleases.rss"
+cftc_general = "https://www.cftc.gov/RSS/RSSGP/rssgp.xml"
+cftc_enforcement = "https://www.cftc.gov/RSS/RSSENF/rssenf.xml"
+[calendars]
+fomc = "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+cpi = "https://www.bls.gov/schedule/news_release/cpi.htm"

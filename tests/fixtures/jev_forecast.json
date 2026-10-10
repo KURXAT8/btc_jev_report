@@ -1,0 +1,1 @@
+{"model":"jev-1.13.0","answers":{"trend_3d":{"type":"choice","choice":"bullish","probabilities":{"bullish":0.7,"sideways":0.2,"bearish":0.1},"confidence":0.7},"trend_7d":{"type":"choice","choice":"sideways","probabilities":{"bullish":0.2,"sideways":0.7,"bearish":0.1},"confidence":0.7}},"usage":{"input_tokens":100,"output_tokens":20}}

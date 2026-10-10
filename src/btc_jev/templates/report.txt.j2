@@ -1,0 +1,5 @@
+{% autoescape false %}{{ subject }}
+{% for section in sections %}
+{{ section.title }}
+{% for line in section.lines %}{{ line }}
+{% endfor %}{% endfor %}{% endautoescape %}

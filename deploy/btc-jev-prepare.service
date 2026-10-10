@@ -1,0 +1,11 @@
+[Unit]
+Description=Prepare BTC Jev daily and weekly report
+[Service]
+Type=oneshot
+WorkingDirectory=@PROJECT@
+EnvironmentFile=-@ENV@
+ExecStart=@EXEC@ prepare
+TimeoutStartSec=26min
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true

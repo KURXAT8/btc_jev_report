@@ -1,0 +1,21 @@
+[Unit]
+Description=Capture Binance public announcements for BTC Jev
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=@PROJECT@
+EnvironmentFile=@ENV@
+ExecStart=@EXEC@ capture-announcements
+Restart=always
+RestartSec=10s
+TimeoutStopSec=20s
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target

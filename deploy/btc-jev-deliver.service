@@ -1,0 +1,11 @@
+[Unit]
+Description=Deliver frozen BTC Jev report in an eligible slot
+[Service]
+Type=oneshot
+WorkingDirectory=@PROJECT@
+EnvironmentFile=-@ENV@
+ExecStart=@EXEC@ send --due
+TimeoutStartSec=2min
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true

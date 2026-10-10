@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "btc-jev"
+version = "0.1.0"
+description = "Auditable Bitcoin daily and weekly email reports using TypeSafe Jev"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.12,<3",
+    "httpx>=0.28,<1",
+    "feedparser>=6.0,<7",
+    "Jinja2>=3.1,<4",
+    "websockets>=15,<16",
+]
+
+[project.scripts]
+btc-jev = "btc_jev.cli:main"
+
+[tool.setuptools.package-data]
+btc_jev = ["templates/*.j2"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--strict-markers"
+filterwarnings = ["error"]

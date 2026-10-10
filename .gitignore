@@ -1,0 +1,21 @@
+# Local credentials and environment
+.env
+.env.*
+!.env.example
+
+# Generated data, reports, mail, databases and packaged artifacts
+/data/
+/build/
+/dist/
+/src/*.egg-info/
+
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local editor and OS files
+.DS_Store
+.idea/
+.vscode/

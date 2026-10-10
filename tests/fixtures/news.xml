@@ -1,0 +1,4 @@
+<rss version="2.0"><channel><title>Synthetic only</title>
+<item><title>Bitcoin synthetic news</title><link>https://example.org/bitcoin?utm_source=test</link><pubDate>Sun, 20 Sep 2026 22:00:00 GMT</pubDate><description>&lt;b&gt;summary&lt;/b&gt;&lt;script&gt;evil()&lt;/script&gt;</description></item>
+<item><title>Bitcoin undated</title><link>https://example.org/missing</link></item>
+</channel></rss>

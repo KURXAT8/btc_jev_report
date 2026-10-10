@@ -1,0 +1,11 @@
+[Unit]
+Description=Archive BTC news and official calendar context
+[Service]
+Type=oneshot
+WorkingDirectory=@PROJECT@
+EnvironmentFile=-@ENV@
+ExecStart=@EXEC@ collect-context
+TimeoutStartSec=3min
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
